@@ -33,4 +33,4 @@ jobs:
         with:
           tag_name:  ${{ steps.build.outputs.version }}
           name: ${{ steps.build.outputs.version }}
-          files: ${{ steps.build.outputs.gir }}
+          files: ${{ steps.build.outputs.dir }}
