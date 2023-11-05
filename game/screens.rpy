@@ -310,7 +310,7 @@ screen navigation():
 
         textbutton _("Налаштування") action ShowMenu("preferences")
 
-        textbutton _("check for updates") action updater.Update(url="https://github.com/cawa-93/novel-dottore/releases/download/Dottore-1.0/updates.json")
+        textbutton _("Перевірити оновлення") action updater.Update(url="https://github.com/olena195/novel-dottore/releases/latest/download/updates.json")
 
         if _in_replay:
 
