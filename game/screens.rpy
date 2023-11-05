@@ -310,6 +310,8 @@ screen navigation():
 
         textbutton _("Налаштування") action ShowMenu("preferences")
 
+        textbutton _("check for updates") action updater.Update(url="https://github.com/cawa-93/novel-dottore/releases/download/Dottore-1.0/updates.json")
+
         if _in_replay:
 
             textbutton _("Закінчити повтору") action EndReplay(confirm=True)
