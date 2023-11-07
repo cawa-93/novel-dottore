@@ -156,7 +156,7 @@ label scene3:
             jump scene4_variant1
 
         "Не писати листа":
-            jump scene4_without_letter
+            jump scene4_variant2
 
 
 label scene3_tavern_menu:
