@@ -752,6 +752,13 @@ screen preferences():
                 ## Сюди можна долучити додаткові вікна vbox типу "radio_pref"
                 ## або "check_pref", щоб долучити додаткові параметри, визначені
                 ## творцем.
+                vbox:
+                    style_prefix "radio"
+                    label _("Мова")
+
+                    # Real languages should go alphabetical order by English name.
+                    textbutton "English" text_font "DejaVuSans.ttf" action Language("english")
+                    textbutton "Українська" text_font "DejaVuSans.ttf" action Language(None)
 
             null height (4 * gui.pref_spacing)
 
