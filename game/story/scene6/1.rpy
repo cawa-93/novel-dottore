@@ -64,7 +64,7 @@ label scene6_1:
     "Елеазар майже не піддається."
     "Лусочки погано відділяються від тіла."
 
-    "(звуки хрусту)"
+    play audio "bones crunching.wav"
     "Боляче."
 
     
@@ -109,13 +109,16 @@ label scene6_1:
 
     DT "Продовжуємо?"
     GG "…"
+
+    show dottore smile_2
     DT "Продовжуємо."
 
-    "(звук хрусту)"
+
+    play audio "bones crunching.wav"
     play sound "screem.mp3"
 
     image black = Color((0, 0, 0, 255))
-    scene black with dissolve
+    scene black with Dissolve(0.5)
 
     "TODO !!! dotore_mad: [dotore_mad]"
     "DEBUGG !!! dotore_mad: [dotore_mad]"
