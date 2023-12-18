@@ -25,7 +25,7 @@ label scene4_variant1:
     Ти прощаєшся з Дотторе і спішиш піднятись по вказаній дорозі до Академії, щоб нарешті вирішити всі запитання та лягти спати раніше.
     """
 
-    scene bg room
+    scene bg corridor
 
     GG "Нарешті я можу відпочити"
 
@@ -46,7 +46,8 @@ label scene4_variant1:
     Потрібно лягати спати. Завтра точно буде краще.
     """
 
-    scene room dark
+    scene bg corridor
+    show half_black 
 
     GG "Що за…"
 
