@@ -1,7 +1,7 @@
 
 label scene3:
     scene bg tavern
-
+    scene bg tavern zoomed
     show tavernkeeper
     T "Вітаю! Займайте будь-який вільний стіл, більшість відвідувачів вже пообідали, тому місця вистачає."
 
@@ -24,7 +24,20 @@ label scene3:
     Так як ніхто не бачить тебе, ти обережно підіймаєш рукав плаща та розглядаєш тверді лусочки, які знову з’явились під час загострення хвороби
     """
 
-    show hand eleazor
+
+    window hide
+    with None
+    show half_black 
+    show hands tavern
+    with dissolve
+
+    pause
+    hide hands tavern 
+    hide half_black
+    with dissolve
+
+    window auto
+
 
     pause
 
@@ -47,7 +60,7 @@ label scene3:
     DT "Вітаю!"
 
     hide hand
-    show dottore smile
+    show dottore street
     with fade
 
     GG "Ой!"
@@ -141,7 +154,7 @@ label scene3:
 
     GG "Що я маю дати взамін? У нас не так багато грошей, якщо казати відверто"
 
-    DT smile large "Тільки взяти участь у моєму експерименті. Це все." 
+    DT street 2 "Тільки взяти участь у моєму експерименті. Це все." 
 
     GG "І все?"
 
@@ -159,6 +172,7 @@ label scene3:
             jump scene4_variant2
 
 
+# TODO: ЗБЕРЕГАТИ НАЗВИ СТРАВ 
 label scene3_tavern_menu:
     menu: 
         T "Чого бажаєте?"

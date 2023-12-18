@@ -460,7 +460,7 @@ translate english scene3_33a6b33b:
 translate english scene3_e22c0349:
 
     # DT smile large "Тільки взяти участь у моєму експерименті. Це все."
-    DT smile large "Тільки взяти участь у моєму експерименті. Це все."
+    DT smile  "Тільки взяти участь у моєму експерименті. Це все."
 
 # game/script.rpy:265
 translate english scene3_46a332cf:
