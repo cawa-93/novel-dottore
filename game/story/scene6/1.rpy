@@ -120,7 +120,4 @@ label scene6_1:
     image black = Color((0, 0, 0, 255))
     scene black with Dissolve(0.5)
 
-    "TODO !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
+    jump scene7_1
