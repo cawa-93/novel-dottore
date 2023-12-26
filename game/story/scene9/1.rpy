@@ -252,8 +252,4 @@ label scene9_1:
     "…зараз ранок чи вечір?.."
     "…я…"
     
-
-    "TODO !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
+    jump scene10_1
