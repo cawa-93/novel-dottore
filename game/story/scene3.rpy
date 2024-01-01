@@ -1,4 +1,6 @@
 
+define was_letter_send = False
+
 label scene3:
     scene bg tavern
     scene bg tavern zoomed
@@ -178,9 +180,11 @@ label scene3:
         "Ти вагаєшся. Що робити?"
 
         "Написати листа":
+            $ was_letter_send = True
             jump scene4_variant1
 
         "Не писати листа":
+            $ was_letter_send = False
             jump scene4_variant2
 
 

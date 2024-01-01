@@ -156,7 +156,7 @@ label scene10_1:
         "Поїсти та відпочити":
             $ False
         "Спробувати звільнитись":
-            $ False
+            $ tried_to_escape_counter += 1
     """
     …потрібно щось робити…
     """
@@ -169,8 +169,4 @@ label scene10_1:
             play sound screem
 
 
-
-    "TODO !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
+    jump scene11_1
