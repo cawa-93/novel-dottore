@@ -1,22 +1,8 @@
-image day marker = Text(_("День 1"), size=120)
-
-transform screen_center:
-    xalign .5
-    yalign .5
-
-define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
-
-
 label scene5:
-    scene bg black
+    
+    call day(_("День 1"))
 
-    show day marker at screen_center with Dissolve(3)
-
-    pause
-
-    hide day marker with dissolve
-
-    show bg laboratory night with fade
+    scene bg laboratory night with dissolve
 
     "Ти прокидаєшся після глибокого сну. Голова болить так, що здається, її легше відрубати, аніж вилікувати."
     

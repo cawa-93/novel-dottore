@@ -1,19 +1,9 @@
 label scene9_1:
-    image day marker = Text(_("День 12"), size=120)
-
-    transform screen_center:
-        xalign .5
-        yalign .5
-
-    scene bg black with fade
-
-    show day marker at screen_center with Dissolve(3)
-
-    pause
+    call day(_("День 12"))
     
     scene bg laboratory
     show dottore
-    with fade
+    with dissolve
 
     GG "Досить… Відпусти мене…"
     DT "Ага. Не рухайся."

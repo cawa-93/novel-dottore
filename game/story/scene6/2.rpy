@@ -111,9 +111,4 @@ label scene6_2:
     GG "…чому…"
     DT "Ось так, молодець."
 
-
-
-    "TODO !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
-    "DEBUGG !!! dotore_mad: [dotore_mad]"
+    jump scene7_2
