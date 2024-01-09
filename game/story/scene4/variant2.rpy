@@ -62,18 +62,19 @@ label scene4_variant2:
 
     GG "Ем…"
 
-    default menuset = set()
+    jump .what_to_do
+                
 
-    label downsteirs:
-        menu:
-            set menuset
-            "Спуститись":
-                jump scene4_variant2_basement
-            "Повернути назад":
-                "Ти робиш крок назад, але натикаєшся на Дотторе, який стоїть відразу за тобою"
-                DT "Чого ти? Іди вперед"
-                "Тобі нічого не залишається як підкоритись"
-                call downsteirs
+label .what_to_do(can_go_back=True):
+    menu:
+        "Спуститись":
+            jump scene4_variant2_basement
+        "Повернути назад" if can_go_back:
+            "Ти робиш крок назад, але натикаєшся на Дотторе, який стоїть відразу за тобою"
+            DT "Чого ти? Іди вперед"
+            "Тобі нічого не залишається як підкоритись"
+            call what_to_do(False)
+    return
 
 label scene4_variant2_basement:
 

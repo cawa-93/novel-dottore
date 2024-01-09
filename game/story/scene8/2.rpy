@@ -108,7 +108,7 @@ label scene8_2:
     Дотторе знову перехоплює лусочку і смикає на себе. Додати якийсь ефект типу боляче.
     """
 
-    call .action_screem
+    call action_screem
 
     DT "Ти мені заважаєш. Все, я її зняв з тебе, заспокойся."
     """
@@ -122,7 +122,7 @@ label scene8_2:
     show operation tweezers 2
     with fade
 
-    call .action_screem
+    call action_screem
     GG "Все! Перестань!"
 
     camera:
@@ -178,7 +178,7 @@ label scene8_2:
     …сота…
     """
 
-    call .action_screem
+    call action_screem
 
     GG "…зупинись…"
     GG "…я…"
@@ -254,10 +254,10 @@ label scene8_2:
     Дотторе опускає залізний прутень і притискає його до твоєї руки.
     """
 
-    call .action_screem(_('ЗАКРИЧАТИ'))
+    call action_screem(_('ЗАКРИЧАТИ'))
 
     DT "Тихіше."
-    call .action_screem(_('ЗАКРИЧАТИ'))
+    call action_screem(_('ЗАКРИЧАТИ'))
     DT "Ох ці невдячні пацієнти."
     GG "…кх…"
 
@@ -272,7 +272,7 @@ label .show_laboratory:
     with fade
     return
 
-label .action_screem(text=_("Закричати")):
+label action_screem(text=_("Закричати")):
     menu:
         '[text]':
             play sound screem
