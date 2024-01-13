@@ -2,7 +2,7 @@ label scene5:
     
     call day(_("День 1"))
 
-    scene bg laboratory night with dissolve
+    scene bg laboratory with dissolve
 
     "Ти прокидаєшся після глибокого сну. Голова болить так, що здається, її легше відрубати, аніж вилікувати."
     
