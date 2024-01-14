@@ -27,7 +27,7 @@ label scene4_variant1:
 
     scene bg city bazar dark
     with fade
-    play music "sumery.wav"
+    play music "<from 18 to 227>in academy.mp3" 
     """
     Сонце вже почало сідати за горизонт. 
     
@@ -36,7 +36,7 @@ label scene4_variant1:
 
     scene bg laboratory coridor
 
-    GG "Нарешті я можу відпочити"
+    GG "Нарешті я можу відпочити."
 
     """
     Ти без проблем заселяєшся у житло. Секретар не задавав зайвих запитань і після одного погляду на твої руки з лусочками без коментарів віддав ключі від кімнати.
@@ -66,6 +66,7 @@ label scene4_variant1:
 
     scene bg laboratory coridor
     show half_black 
+    stop music
 
     GG "Що за…"
 
@@ -75,6 +76,9 @@ label scene4_variant1:
     Ти нервово шукаєш перемикач, але в темряві не можеш намацати його.
     """
 
+    play music "laboratory hello.mp3" fadein 3.0
+
+
     GG "Спокійно. Все добре. Мабуть, воно вимикається само собою."
 
     "Так, ці розумні вчені точно зробили світло, що вимикається самостійно. Точно."
@@ -82,6 +86,8 @@ label scene4_variant1:
     "Боятися нема чого."
 
     GG "Та де ж ти?"
+
+    play sound "<from 6 to 8>skrep.wav" volume 2.0
 
     GG """
     Га?
@@ -106,11 +112,12 @@ label scene4_variant1:
     """
     pause
     pause
-
+    
+    play sound "skrimer.wav" volume 0.5
 
     show dottore street ukol
 
-    DT "Вибач, не зміг чекати до ранку"
+    DT "Вибач, не зміг чекати до ранку."
 
     GG "..."
     GG "...ні..."
