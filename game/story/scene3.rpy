@@ -2,8 +2,10 @@
 define was_letter_send = False
 
 label scene3:
+  
     scene bg tavern
     with fade
+    play music "№2_321220__ralexpdx__my-tavern-1.wav"
 
     pause
 

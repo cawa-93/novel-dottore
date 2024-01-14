@@ -16,6 +16,7 @@ label scene4_variant2:
 
     scene bg city bazar dark
     with  fade
+    play music "№3_sumery.mp3"
 
     DT "Завжди бісило в цьому Сумеру те, що тут так рано темніє."
 
@@ -64,9 +65,26 @@ label scene4_variant2:
 
     
     
-    scene bg laboratory coridor
+    scene bg black
+    window hide
+    stop music
     with fade
+
+    play sound "<from 0 to 8>skrep.wav"
+
+    pause 8
+
+    show bg laboratory coridor
+    with fade
+
+    play sound "<from 0 to 3>angry-door-entrance-lock-unlock-a.mp3"
+
+    pause 3
     
+    window auto
+
+    play music "horror-coridor.wav"
+
     """
     Ви разом заходите всередину і Дотторе відразу зачиняє двері на ключ.
     """

@@ -27,6 +27,7 @@ label scene4_variant1:
 
     scene bg city bazar dark
     with fade
+    play music "sumery.wav"
     """
     Сонце вже почало сідати за горизонт. 
     
