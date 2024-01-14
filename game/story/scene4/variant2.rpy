@@ -85,6 +85,8 @@ label scene4_variant2:
 
     play music "horror-coridor.wav" fadein 3.0
 
+    show dottore street shadow
+
     """
     Ви разом заходите всередину і Дотторе відразу зачиняє двері на ключ.
     """
@@ -198,6 +200,8 @@ label scene4_variant2_basement:
     pause
 
     DT "Нас чекає цікаве дослідження."
+
+    stop music
 
     camera
 
