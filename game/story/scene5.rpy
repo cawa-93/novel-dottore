@@ -3,6 +3,7 @@ label scene5:
     call day(_("День 1"))
 
     scene bg laboratory with dissolve
+    play music "day-1.mp3"
 
     "Ти прокидаєшся після глибокого сну. Голова болить так, що здається, її легше відрубати, аніж вилікувати."
     
