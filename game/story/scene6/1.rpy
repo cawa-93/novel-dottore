@@ -1,6 +1,6 @@
 label scene6_1:
 
-    show dottore knife
+    show dottore lab knife
 
 
     DT "Ніж? Я щиро здивований. Мало хто любить, коли я тримаю гострі предмети в руках."
