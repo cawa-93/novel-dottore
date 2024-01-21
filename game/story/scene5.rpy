@@ -283,7 +283,7 @@ label scene5:
 
     Я знаю про всі спроби знайти ліки від елеазару і знаю, чим закінчилась кожна з них.
     """
-    show dottore lab smile 2
+    show dottore lab smile 3
     DT """
     Нічим, насправді.
 
