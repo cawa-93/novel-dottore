@@ -83,7 +83,7 @@ label scene6_1:
 
     play audio "bones crunching.wav"
     show half_black 
-    show legs operation 3
+    show legs operation_3
     with dissolve
     "Боляче."
 
@@ -113,12 +113,19 @@ label scene6_1:
         "Попросити зупинитись":
             $ False
 
+    hide legs operation_3
+    hide  half_black
+    with dissolve
+
     show dottore lab tweezers
     with dissolve
 
     DT "Ще трохи."
+
+    show half_black
     show operation tweezers
     with dissolve
+
     "Дотторе бере пінцет і вириває окремі лусочки, які дуже глибоко вросли у твоє тіло."
     show operation tweezers 2
     with dissolve
