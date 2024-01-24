@@ -142,8 +142,8 @@ label scene6_1:
         linear 1.0 blur 0
 
     menu:
-        "Закричати":
-            play sound "screem.mp3" volume 2
+        "Скрикнути":
+            play sound "<from 3 to 4>ouch.mp3" volume 1 
 
     "Здається, що на тебе вилили окріп. Хочеться втратити свідомість, але вона більш твереза, ніж у будь-який інший день."
 
@@ -160,14 +160,19 @@ label scene6_1:
     DT "Продовжуємо?"
     GG "…"
 
-    show dottore smile 3
+    show dottore lab tweezers 2
     DT "Продовжуємо."
 
 
     play audio "bones crunching.wav"
+    
     play sound "screem.mp3"
 
     image black = Color((0, 0, 0, 255))
     scene black with Dissolve(0.5)
+
+    pause
+    pause
+    stop music
 
     jump scene7_1

@@ -45,6 +45,7 @@ label scene4_variant1:
     """
 
     scene bg shower
+    play music "shower.mp3"
 
     """
     Змиваючи пил та пісок зі шкіри, ти мимо волі думаєш про сім’ю, яка залишилась вдома.

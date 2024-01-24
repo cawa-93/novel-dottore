@@ -6,6 +6,7 @@ label scene8_2:
     with dissolve
 
     show dottore lab smile 4
+    with dissolve
 
     DT "Ану, відкрий рота."
     """
@@ -255,7 +256,7 @@ label scene8_2:
 
     camera
     scene bg laboratory
-    show dottore tweezers
+    show dottore lab tweezers 2
     with Dissolve(3)
 
     """
@@ -265,6 +266,7 @@ label scene8_2:
     
     Це не сон.
     """
+    show dottore lab smile 8
     GG "…пити…"
     DT "Поп’єш через годинку."
     DT "Я закінчив перший етап операції."
