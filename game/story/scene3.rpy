@@ -42,6 +42,7 @@ label scene3:
     show half_black 
     show hands tavern
     with dissolve
+    pause
 
 
     """

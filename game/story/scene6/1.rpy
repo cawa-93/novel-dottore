@@ -75,13 +75,17 @@ label scene6_1:
    
 
     "Дотторе сильніше тисне на лезо і дуже невміло намагається зішкребти нарости."
+    window hide
     show half_black 
     show legs operation
     with dissolve
+    pause
+    
     "Елеазар майже не піддається."
+    play audio "bones churching.mp3"
     "Лусочки погано відділяються від тіла."
 
-    play audio "bones crunching.wav"
+    play audio "bones churching.mp3"
     show half_black 
     show legs operation_3
     with dissolve

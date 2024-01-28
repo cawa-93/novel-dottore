@@ -1,7 +1,7 @@
 label scene8_2:
     
     call day(_("День 5"))
-
+    play music "day-1.mp3"
     show bg laboratory
     with dissolve
 
@@ -26,6 +26,7 @@ label scene8_2:
     show dottore lab smile 1
     DT "..."
     DT "Зараз дещо спробуємо."
+    show dottore lab smile 10
     """
     Вчений відвертається і починає щось шукати у своєму робочому столі.
     """
@@ -49,6 +50,7 @@ label scene8_2:
     show bg laboratory
     show dottore lab smile 1
 
+    show dottore lab smile 8
     """
     Коли Дотторе завершує всі приготування, ти починаєш тремтіти.
     """
@@ -56,6 +58,7 @@ label scene8_2:
     show dottore lab smile 10
     DT "О, це буде цікаво."
     DT "Слухай."
+    show dottore lab smile 5
     DT "Я ось що помітив: не дивлячись на виведення кальцію, елеазар продовжує рости. Впевнений, якщо його прибрати, доки він такий «ослаблений», то він знову не з’явиться."
 
     show dottore lab smile 4
@@ -120,6 +123,7 @@ label scene8_2:
     with fade
 
     "Вчений пінцетом підчеплює одну з твердих лусочок і різко смикає її на себе."
+    play sound "bones crunching.wav"
 
     camera:
         blur 0
@@ -142,6 +146,7 @@ label scene8_2:
     DT "…"
     GG "Це не спрацює!"
 
+    play sound "bones churching.mp3"
     scene bg black
     show operation tweezers 2
     with fade
@@ -169,6 +174,7 @@ label scene8_2:
     Знову пінцет.
     """
     DT "Ще одна."
+    play sound "bones churching.mp3"
 
     show blood 1
 
@@ -184,6 +190,8 @@ label scene8_2:
             $ dotore_mad += -10
 
     DT "Як вона вчепилась за тебе, ніяк не хоче від’єднуватись."
+
+    play sound "bones churching.mp3"
 
     camera:
         blur 0
@@ -202,6 +210,7 @@ label scene8_2:
         linear 1.0 blur 30
         linear 0.5 blur 0
 
+    play sound "bones churching.mp3"
     DT "І ще."
     DT "І ще."
     GG "…мені погано…"
@@ -212,15 +221,21 @@ label scene8_2:
         linear 0.5 blur 0
 
     DT "Терпи."
+
+    play sound "bones churching.mp3"
     """
     Перша.
-    
+    """
+    play sound "bones churching.mp3"
+    """
     Третя.
     
     Десята.
     
     …
-    
+    """
+    play sound "bones churching.mp3"
+    """
     …сота…
     """
 
@@ -236,7 +251,7 @@ label scene8_2:
     GG "…я більше не можу…"
 
     scene bg black with dissolve
-
+    stop music
     """
     …
     
@@ -258,6 +273,7 @@ label scene8_2:
     scene bg laboratory
     show dottore lab tweezers 2
     with Dissolve(3)
+    play music "laboratory hello.mp3"
 
     """
     Ти повільно відкриваєш очі.
@@ -295,15 +311,13 @@ label scene8_2:
     """
     DT "Зараз буде боляче, тож потерпи трішки."
 
-    show dottore
+    show dottore lab fire
 
     GG "…"
     GG "НІ!"
 
-    show dottore smile
-
     """
-    Дотторе опускає залізний прутень і притискає його до твоєї руки.
+    Дотторе опускає руку і проводить вогнем вздовж твоїх ран.
     """
 
     call action_screem(_('ЗАКРИЧАТИ'))
