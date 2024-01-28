@@ -151,7 +151,6 @@ label scene8_2:
     show operation tweezers 2
     with fade
 
-    call action_screem
     GG "Все! Перестань!"
 
     camera:
@@ -244,7 +243,6 @@ label scene8_2:
         linear 1.0 blur 30
         linear 0.5 blur 0
 
-    call action_screem
 
     GG "…зупинись…"
     GG "…я…"

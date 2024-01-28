@@ -94,7 +94,7 @@ label scene6_1:
     
     menu: 
         "Закричати":
-            play sound "screem.mp3"
+            pass
         "Сіпнутись":
             window hide
             with hpunch
@@ -131,6 +131,7 @@ label scene6_1:
     with dissolve
 
     "Дотторе бере пінцет і вириває окремі лусочки, які дуже глибоко вросли у твоє тіло."
+    play audio "bones crunching.wav"
     show operation tweezers 2
     with dissolve
     DT "І-і-і остання. Все, ліва нога чиста. Ти молодець."
@@ -147,7 +148,7 @@ label scene6_1:
 
     menu:
         "Скрикнути":
-            play sound "<from 3 to 4>ouch.mp3" volume 1 
+            play sound "<from 3.5 to 4.5>ouch.mp3" volume 1 
 
     "Здається, що на тебе вилили окріп. Хочеться втратити свідомість, але вона більш твереза, ніж у будь-який інший день."
 
