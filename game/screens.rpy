@@ -757,8 +757,8 @@ screen preferences():
                     label _("Мова")
 
                     # Real languages should go alphabetical order by English name.
-                    textbutton "English" text_font "DejaVuSans.ttf" action Language("english")
-                    textbutton "Українська" text_font "DejaVuSans.ttf" action Language(None)
+                    textbutton "English" text_font "Genshin-Impact-Opt.ttf" action Language("english")
+                    textbutton "Українська" text_font "Genshin-Impact-Opt.ttf" action Language(None)
 
             null height (4 * gui.pref_spacing)
 
@@ -1258,7 +1258,7 @@ style skip_text:
 style skip_triangle:
     ## Ми повинні використовувати шрифт із гліфом МАЛЕНЬКИЙ ЧОРНИЙ ТРИКУТНИК
     ## ВПРАВО.
-    font "DejaVuSans.ttf"
+    font "Genshin-Impact-Opt.ttf"
 
 
 ## Екран сповіщень #############################################################
