@@ -219,7 +219,8 @@ label scene8_1:
 
     "Перший кривий стібок зроблений."
 
-    camera:
+    camera
+    
     scene bg black
     show hands operation
     with fade
@@ -241,7 +242,8 @@ label scene8_1:
         linear 0.5 blur 30
         linear 1.0 blur 0
 
-    camera:
+    camera
+
     scene bg black
     show hands operation 2
     with fade
