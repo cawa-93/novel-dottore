@@ -134,6 +134,9 @@ default preferences.text_cps = 0
 default preferences.afm_time = 15
 
 
+default preferences.display = "fullscreen"
+
+
 ## Зберегти теку ###############################################################
 ##
 ## Контролює місце, де Ren'Py буде розміщувати файли збереження для цієї гри.
