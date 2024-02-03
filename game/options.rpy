@@ -48,7 +48,7 @@ define build.name = "Dottore"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## Щоб дозволити користувачеві відтворювати тестовий звук на звуковому або
@@ -86,12 +86,12 @@ define config.intra_transition = dissolve
 
 ## Перехід, що використовується після завантаження гри.
 
-define config.after_load_transition = None
+define config.after_load_transition = fade
 
 
 ## Використовується під час входу в головне меню після завершення гри.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
 
 
 ## Змінна для встановлення переходу, який використовується під час запуску гри,
