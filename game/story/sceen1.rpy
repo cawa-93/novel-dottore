@@ -1,6 +1,6 @@
 
-define O = Character(name="Охоронець", image="security")
-define T = Character(name="Трактирник", image="tavernkeeper")
+define O = Character(name="Охоронець", image="security", color="#fac640", who_outlines=[(1, "#725c2b", 0, 0)])
+define T = Character(name="Трактирник", image="tavernkeeper", color="#fac640", who_outlines=[(1, "#725c2b", 0, 0)])
 
 label scene1:
     

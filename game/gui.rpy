@@ -80,11 +80,11 @@ define gui.accent_color = '#0099cc'
 
 ## Колір, який використовується для текстової кнопки, коли вона не вибрана і не
 ## наведена.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#fff'
 
 ## Дрібний колір використовується для дрібного тексту, який має бути яскравішим/
 ## темнішим, щоб досягти того самого ефекту.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#ffffff99'
 
 ## Колір, який використовується для кнопок і смуг, на які наводяться.
 define gui.hover_color = '#66c1e0'
@@ -122,7 +122,7 @@ define gui.interface_text_font = "Genshin-Impact-Opt.ttf"
 define gui.text_size = 33
 
 ## Розмір імен персонажів.
-define gui.name_text_size = 45
+define gui.name_text_size = 35
 
 ## Розмір тексту в інтерфейсі користувача гри.
 define gui.interface_text_size = 33
@@ -134,7 +134,7 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 ## Розмір назви гри.
-define gui.title_text_size = 75
+define gui.title_text_size = 50
 
 
 ## Головне та ігрове меню ######################################################
@@ -159,21 +159,21 @@ define gui.textbox_yalign = 1.0
 
 ## Розташування імені персонажа, що говорить, відносно текстового поля. Це може
 ## бути ціла кількість пікселів зліва чи зверху або 0,5 до центру.
-define gui.name_xpos = 360
+define gui.name_xpos = 0.5
 define gui.name_ypos = 0
 
 ## Горизонтальне вирівнювання імені персонажа. Це може бути 0,0 для вирівнювання
 ## по лівому краю, 0,5 для вирівнювання по центру та 1,0 для вирівнювання по
 ## правому краю.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## Ширина, висота та межі поля, що містять ім’я персонажа, або None, щоб
 ## автоматично змінити його розмір.
 define gui.namebox_width = None
 define gui.namebox_height = None
-
+define gui.namebox_colour = '#ffffff' 
 ## Межі поля, що містять ім'я персонажа, у порядку зліва, зверху, справа, знизу.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(5, 15, 5, 15)
 
 ## Якщо True, фон поля імен буде мозаїкою, якщо False, фон вікна імен буде
 ## масштабовано.
@@ -182,7 +182,7 @@ define gui.namebox_tile = False
 
 ## Розташування діалогу відносно текстового поля. Це може бути ціла кількість
 ## пікселів відносно лівого чи верхнього краю текстового поля або 0,5 до центру.
-define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 0.5
 define gui.dialogue_ypos = 75
 
 ## Максимальна ширина тексту діалогу в пікселях.
@@ -191,7 +191,7 @@ define gui.dialogue_width = 1116
 ## Горизонтальне вирівнювання тексту діалогу. Це може бути 0,0 для вирівнювання
 ## по лівому краю, 0,5 для вирівнювання по центру та 1,0 для вирівнювання по
 ## правому краю.
-define gui.dialogue_text_xalign = 0.0
+define gui.dialogue_text_xalign = 0.5
 
 
 ## Кнопки ######################################################################

@@ -1,5 +1,5 @@
-define GG = Character("player_name", dynamic=True)
-define DT = Character(name=_("Дотторе"), image="dottore")
+define GG = Character("player_name", dynamic=True, color="#fac640", who_outlines=[(1, "#725c2b", 0, 0)])
+define DT = Character(name=_("Дотторе"), image="dottore", color="#fac640", who_outlines=[(1, "#725c2b", 0, 0)])
 
 label day(label, time=3):
     scene bg black with fade
