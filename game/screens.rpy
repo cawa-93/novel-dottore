@@ -410,6 +410,7 @@ screen main_menu():
 
             text "[config.name!t]":
                 color "#fff"
+                xmaximum 800
                 style "main_menu_title"
 
             # imagebutton:
