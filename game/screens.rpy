@@ -291,17 +291,15 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
         yalign 0.5
-
+        xpos gui.navigation_xpos
+        
         spacing gui.navigation_spacing
 
         if main_menu:
-
             textbutton _("Почати") action Start()
-
+            
         else:
-
             textbutton _("Історія") action ShowMenu("history")
 
             textbutton _("Зберегти") action ShowMenu("save")
@@ -314,7 +312,7 @@ screen navigation():
 
         if _in_replay:
 
-            textbutton _("Закінчити повтору") action EndReplay(confirm=True)
+            textbutton _("Закінчити повтор") action EndReplay(confirm=True)
 
         elif not main_menu:
 
@@ -341,6 +339,7 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
+    xalign 0.5
     properties gui.button_text_properties("navigation_button")
 
 
@@ -358,12 +357,51 @@ screen main_menu():
     add gui.main_menu_background
 
     ## Ця порожня рамка затемнює головне меню.
-    frame:
-        style "main_menu_frame"
+    # frame:
+    #     style "main_menu_frame"
 
     ## Інструкція використання включає інший екран всередині цього. Фактичний
     ## вміст головного меню знаходиться на екрані навігації.
-    use navigation
+    # use navigation
+
+    vbox:
+        style_prefix "navigation"
+
+        
+        spacing gui.navigation_spacing
+
+        yanchor 1.0
+        ypos 0.9
+        xalign 0.5
+        
+        textbutton _("Почати") action Start()
+
+        textbutton _("Завантажити") action ShowMenu("load")
+
+        textbutton _("Налаштування") action ShowMenu("preferences")
+
+        textbutton _("Оновити гру") action updater.Update(url="https://github.com/olena195/novel-dottore/releases/latest/download/updates.json")
+
+        if _in_replay:
+
+            textbutton _("Закінчити повтор") action EndReplay(confirm=True)
+
+        elif not main_menu:
+
+            textbutton _("Головне меню") action MainMenu()
+
+        textbutton _("Про гру") action ShowMenu("about")
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Допомога не є необхідною або актуальною для мобільних пристроїв.
+            textbutton _("Довідка") action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## Кнопка виходу заборонена на iOS і непотрібна на Android і в Веб.
+            textbutton _("Вийти") action Quit(confirm=not main_menu)
+
 
     if gui.show_name:
 
@@ -371,7 +409,13 @@ screen main_menu():
             style "main_menu_vbox"
 
             text "[config.name!t]":
+                color "#fff"
                 style "main_menu_title"
+
+            # imagebutton:
+            #     xalign 1.0
+            #     yalign 1.0
+            #     idle "knife.png" action OpenURL("http://example.com")
 
             # text "[config.version]":
             #     style "main_menu_version"
@@ -390,11 +434,11 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
+    xalign 0.5
+    xoffset 0
     xmaximum 1200
-    yalign 0.0
-    yoffset 30
+    ycenter 0.2
+    yoffset 0.5
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
