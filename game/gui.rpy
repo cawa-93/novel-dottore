@@ -173,7 +173,7 @@ define gui.namebox_width = None
 define gui.namebox_height = None
 define gui.namebox_colour = '#ffffff' 
 ## Межі поля, що містять ім'я персонажа, у порядку зліва, зверху, справа, знизу.
-define gui.namebox_borders = Borders(5, 15, 5, 15)
+define gui.namebox_borders = Borders(100, 15, 100, 15)
 
 ## Якщо True, фон поля імен буде мозаїкою, якщо False, фон вікна імен буде
 ## масштабовано.

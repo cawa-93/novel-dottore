@@ -310,7 +310,7 @@ screen navigation():
 
         textbutton _("Налаштування") action ShowMenu("preferences")
 
-        textbutton _("Перевірити оновлення") action updater.Update(url="https://github.com/olena195/novel-dottore/releases/latest/download/updates.json")
+        textbutton _("Оновити гру") action updater.Update(url="https://github.com/olena195/novel-dottore/releases/latest/download/updates.json")
 
         if _in_replay:
 
@@ -373,8 +373,8 @@ screen main_menu():
             text "[config.name!t]":
                 style "main_menu_title"
 
-            text "[config.version]":
-                style "main_menu_version"
+            # text "[config.version]":
+            #     style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -393,8 +393,8 @@ style main_menu_vbox:
     xalign 1.0
     xoffset -30
     xmaximum 1200
-    yalign 1.0
-    yoffset -30
+    yalign 0.0
+    yoffset 30
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
@@ -562,7 +562,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Зроблено з {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            # text _("Зроблено з {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 style about_label is gui_label
