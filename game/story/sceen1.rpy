@@ -5,7 +5,7 @@ define T = Character(name="Трактирник", image="tavernkeeper", color="#
 label scene1:
     
     scene bg city entrance
-    play music "№1_654968__sergequadrado__puzzle-game.wav"
+    play music "№1_start.mp3"
 
     """
     Ти полегшено зітхаєш і пришвидшуєш крок.
