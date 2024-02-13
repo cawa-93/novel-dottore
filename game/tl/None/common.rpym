@@ -495,7 +495,7 @@ translate None strings:
 
     # renpy/common/00gui.rpy:454
     old "Are you sure you want to continue where you left off?"
-    new "Are you sure you want to continue where you left off?"
+    new "Ви впевнені, що хочете продовжити з того місця, на якому зупинилися?"
 
     # renpy/common/00gui.rpy:455
     old "Are you sure you want to end the replay?"
