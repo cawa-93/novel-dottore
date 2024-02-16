@@ -419,7 +419,7 @@ screen main_menu():
             xpos 0.99
             ypos 0.98            
 
-            idle im.Scale("bmc_qr.png", 180, 180) action OpenURL("https://www.buymeacoffee.com/hai_tak")
+            idle im.Scale("bmc_qr.png", 180, 180) action OpenURL("https://www.buymeacoffee.com/kyivskazefirka")
 
             # text "[config.version]":
             #     style "main_menu_version"
