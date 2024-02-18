@@ -1,6 +1,6 @@
 label scene11_2:
     
-    call day(_("День 12"))
+    call day(_("День 17"))
 
     if dotore_mad > 0:
         call .dottore_mad
